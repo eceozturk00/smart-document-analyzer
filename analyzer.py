@@ -203,17 +203,17 @@ def main() -> None:
     elif args.input.lower().endswith(".pdf"):
         chunks = read_pdf(args.input)
     else:
-        raise SystemExit("❌ Unsupported file type. Please provide a .docx or .pdf file.")
+        raise SystemExit(" Unsupported file type. Please provide a .docx or .pdf file.")
 
     if not chunks:
-        raise SystemExit("❌ No readable content found in the document.")
+        raise SystemExit(" No readable content found in the document.")
 
     keywords = extract_keywords(chunks, top_k=args.topk)
 
     export_excel(chunks, args.excel)
     export_json(chunks, keywords, args.json)
 
-    print(f"✅ Done!\n- Excel: {args.excel}\n- JSON: {args.json}\n- Keywords: {keywords[:5]}")
+    print(f" Done!\n- Excel: {args.excel}\n- JSON: {args.json}\n- Keywords: {keywords[:5]}")
 
 
 if __name__ == "__main__":
