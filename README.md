@@ -12,4 +12,4 @@ A Python tool that analyzes **Word (.docx)** and **PDF (.pdf)** documents, extra
 
 ## Install
 ```bash
-pip install -r requirements.txt
+python analyzer.py --input input.docx --excel output.xlsx --json output.json
