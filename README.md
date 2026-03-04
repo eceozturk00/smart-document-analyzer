@@ -1,2 +1,15 @@
-# smart-document-analyzer
-Analyze Word/PDF documents, extract keywords, and export results to Excel/JSON.
+# Smart Document Analyzer
+
+A Python tool that analyzes **Word (.docx)** and **PDF (.pdf)** documents, extracts keywords, and exports results to **Excel** and **JSON**.
+
+## Features
+- Supports **DOCX** and **PDF**
+- Detects headings/sections (best-effort)
+- Extracts **top keywords** using basic NLP
+- Exports:
+  - `output.xlsx` (structured table)
+  - `output.json` (chunks + stats + keywords)
+
+## Install
+```bash
+pip install -r requirements.txt
